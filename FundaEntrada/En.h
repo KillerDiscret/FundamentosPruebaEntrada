@@ -8,7 +8,7 @@ private:
 	int edad;
 	char p1, p2, p3;
 public:
-	encuesta(void);
+	encuesta();
 	int getedad();
 	char getp1();
 	char getp2();
@@ -19,7 +19,7 @@ public:
 	void setp3(char letra);
 	~encuesta();
 };
-encuesta::encuesta(void)
+encuesta::encuesta()
 {
 
 }

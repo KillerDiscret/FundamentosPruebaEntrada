@@ -133,12 +133,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FormCalcular.cpp" />
     <ClCompile Include="FormEncuesta.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArregloEncuesta.h" />
     <ClInclude Include="En.h" />
+    <ClInclude Include="FormCalcular.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="FormEncuesta.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -147,6 +151,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormCalcular.resx">
+      <DependentUpon>FormCalcular.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEncuesta.resx">
       <DependentUpon>FormEncuesta.h</DependentUpon>
     </EmbeddedResource>

@@ -38,7 +38,7 @@ namespace FundaEntrada {
 	protected:
 	private: System::Windows::Forms::Button^  button1;
 	public:
-	private: System::Windows::Forms::Button^  button3;
+
 
 	private:
 		/// <summary>
@@ -55,7 +55,6 @@ namespace FundaEntrada {
 		{
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -65,7 +64,7 @@ namespace FundaEntrada {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Pristina", 20, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::White;
-			this->label1->Location = System::Drawing::Point(69, 42);
+			this->label1->Location = System::Drawing::Point(32, 39);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(195, 35);
 			this->label1->TabIndex = 1;
@@ -78,7 +77,7 @@ namespace FundaEntrada {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->button1->Location = System::Drawing::Point(97, 119);
+			this->button1->Location = System::Drawing::Point(54, 128);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(148, 72);
 			this->button1->TabIndex = 2;
@@ -87,26 +86,11 @@ namespace FundaEntrada {
 			this->button1->UseWaitCursor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
-			// button3
-			// 
-			this->button3->BackColor = System::Drawing::Color::DeepSkyBlue;
-			this->button3->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button3->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->button3->Location = System::Drawing::Point(97, 240);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(148, 71);
-			this->button3->TabIndex = 4;
-			this->button3->Text = L"Mostrar\r\nResultados";
-			this->button3->UseVisualStyleBackColor = false;
-			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(332, 426);
-			this->Controls->Add(this->button3);
+			this->ClientSize = System::Drawing::Size(268, 250);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label1);
 			this->Name = L"MyForm";
@@ -126,7 +110,7 @@ namespace FundaEntrada {
 	}
 	private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
 
-		Application::Exit();
+
 	}
 };
 }
